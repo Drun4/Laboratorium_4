@@ -221,6 +221,64 @@ namespace Laboratorium_4
             box_input.Text = "";
             box_degree.Text = "";
         }
+
+        //Experiment
+        /*
+        delegate Func<double, double, bool> operations2(double a, double b);
+        static operations compare2;
+
+        Func<double[], operations2, double[]> BubbleSort2 = (table, compare) =>
+        {
+            for (int i = 0; i < table.Length; i++)
+            {
+                for (int j = 1; j < table.Length - i; j++)
+                {
+                    if (compare2(table[j], table[j - 1]))
+                    {
+                        var temp = table[j];
+                        table[j] = table[j - 1];
+                        table[j - 1] = temp;
+                    }
+                }
+            }
+            return table;
+        };
+
+        public static Func<double, double, bool> CompareAscending(double a, double b)
+        {
+            bool result = false;
+            return (s1, s2) =>
+            {
+                if (s1 > s2)
+                {
+                    result = false;
+                }
+                else
+                {
+                    result = true;
+                }
+                return result;
+            };
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            box_output.Text = "";
+            string[] inputs = box_input.Text.Split(' ');
+            double[] array = new double[inputs.Length];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = Convert.ToDouble(inputs[i]);
+            }
+
+            compare2 = CompareAscending();
+            double[] outputTable = BubbleSort(array, compare2);
+            for (int i = 0; i < outputTable.Length; i++)
+            {
+                box_output.Text += outputTable[i].ToString() + " ";
+            }
+        }
+        */
     }
 }
 
